@@ -1,0 +1,78 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 0.35;
+    border-width: 1px;
+    border-right: 1px solid lightgrey;
+    border-style: solid;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    z-index: 50;
+}
+
+.sidebar__search {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 39px;
+    padding: 10px;
+}
+
+.sidebar_input {
+    border: none;
+    width: 82%;
+}
+
+.sidebar__searchContainer {
+    border: 1px solid lightgrey;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -10px;
+    border-radius: 20px;
+}
+
+.sidebar__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    width: 37vw;
+}
+
+.sidebar__headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 5vw;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+      outline: none;
+}
+
+.sidebar__chats {
+    flex: 1;
+    margin-top: 5px;
+    background-color: #f6f6f6;
+    border-top: 1px solid lightgrey;
+}
+
+.sidebarChat:hover {
+    background-color: black;;
+}
+
+@media only screen and (min-width: 1000px) {
+    .sidebar__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        width: 25vw;
+    }
+}

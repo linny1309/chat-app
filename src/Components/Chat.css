@@ -1,0 +1,141 @@
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column
+}
+
+.chat__header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.chat__headerInfo {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.chat__headerInfo > h3 {
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.chat__headerInfo > p {
+    color: gray;
+}
+
+.chat__headerRight {
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+}
+
+.chat__body {
+    flex: 1;
+    background-color: rgba(200, 200, 200, 0.578);
+    padding: 30px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.chat__message {
+    position: relative;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.chat__name {
+    margin-left: -5px;
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+
+.chat__timestamp {
+    font-size: xx-small;
+    margin-top: 5px;
+}
+
+.chat__reciever {
+    position: relative;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-left: auto;
+    background: rgba(160, 255, 160, 0.38);
+}
+
+.chat__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgrey;
+}
+
+.chat__footer > form {
+    flex: 1;
+    display: flex;
+}
+
+.chat__footer > form > input {
+    padding: 5px;
+    flex: 1;
+    border-radius: 30px;
+    border: none;
+    border: 1px solid lightgrey;
+    border-width: 1px;
+}
+
+.chat__footer > form > button {
+    padding: 3px;
+    border-color: rgb(190, 190, 190);
+    border-width: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    background-color: rgb(233, 233, 233);
+    width: 150px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.chat__footerIcon {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.chat__footer > form > button:hover {
+    background-color: lightgray;
+} 
+
+
+
